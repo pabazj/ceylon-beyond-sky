@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './package.css';
 import { packageList } from '../../Data';
-import { Link   } from "react-router-dom";
+import { Link, useLocation    } from "react-router-dom";
 
 function Packages() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section name='packages'>
       <h2>Packages</h2>
@@ -20,7 +25,7 @@ function Packages() {
                   {item.details}
                 </p>
                 <p>
-                <Link to={`/package/${item.title.replace(/\s/g, '')}`} ><button className="button">Details</button></Link>
+                <Link to={item.url} ><button className="button" >Details</button></Link>
                 </p>
               </div>
             </div>

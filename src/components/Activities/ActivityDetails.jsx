@@ -6,16 +6,16 @@ import HotAirballooning from './HotAirballooning';
 import Camping from './Camping';
 import './activities.css'
 
-const getActivityDetailsComponent = (id) => {
+const getActivityDetailsComponent = (activityId) => {
     
-    switch (id) {
-        case 'Cycling':
+    switch (activityId) {
+        case 'cycling':
           return <Cycling/>;
-        case 'WaterSports':
+        case 'water-sports':
           return <WaterSports/>;
-        case 'HotAirballooning':
+        case 'hot-air-ballooning':
           return <HotAirballooning/>;
-        case 'Camping':
+        case 'camping':
           return <Camping/>;
         default:
           return null;
@@ -23,8 +23,9 @@ const getActivityDetailsComponent = (id) => {
 }
 
 function ActivityDetails() {
-    const { id } = useParams();
-    const activityDetailsComponent = getActivityDetailsComponent(id);
+    const { activityId } = useParams("activityId");
+   
+    const activityDetailsComponent = getActivityDetailsComponent(activityId);
 
     const navigate = useNavigate();
 

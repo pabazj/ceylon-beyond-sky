@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './destinations.css'
 
 import { Link } from "react-router-dom";
 import { destinationyList } from '../../Data';
 import Surfing from '../../assets/Packages/beach/Surfing.jpg'
+import DestinationDetils from './DestinationDetils'
 
 function Destinations() {
 
@@ -18,8 +19,9 @@ function Destinations() {
           <div className="grid-container">
             {destinationyList.map(item => (
               <p key={item.id} className="grid-item">
-                <Link to={`/destinations/${item.title.replace(/\s/g, '')}`} >
-                  {item.title} <i className="arrow right"></i>
+                <Link to={item.url} >
+                  {item.title} <i className="arrow right">
+                  </i>
                 </Link>
               </p>
             ))}

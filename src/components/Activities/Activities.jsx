@@ -15,7 +15,7 @@ function Activities() {
         {activityList.map(item => (
           <div className="container" key={item.id}>
             <img src={item.image} alt="Avatar" className="image" />
-            <Link to={`/activity/${item.title.replace(/\s/g, '')}`} ><div className="overlay"><p>{item.title}</p></div></Link>
+            <Link to={item.url} ><div className="overlay"><p>{item.title}</p></div></Link>
           </div>
         ))}
       </div>

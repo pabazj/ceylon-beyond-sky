@@ -10,24 +10,24 @@ import WeddingAndHoneymoonTour from './WeddingAndHoneymoonTour'
 import RamayanaTour from './RamayanaTour'
 import WhildLifeSafari from './WhildLifeSafari'
 
-const getPackageDetailsComponent = (id) => {
+const getPackageDetailsComponent = (packageId) => {
     
-    switch (id) {
-        case 'AdventureTour':
+    switch (packageId) {
+        case 'adventure-tour':
           return <AdventureTour/>;
-        case 'BeachTour':
+        case 'beach-tour':
           return <BeachTour/>;
-        case 'FamilyTour':
+        case 'family-tour':
           return <FamilyTour/>;
-        case 'AyurvedaAndWellness':
+        case 'ayurveda-and-wellness':
           return <AyurvedaAndWellness/>;
-          case 'BuddhistCultureAndClassic':
+          case 'buddhist-culture-and-classic':
           return <BuddhistCultureAndClassic/>;
-        case 'WeddingAndHoneymoonTour':
+        case 'wedding-and-honeymoon-tour':
           return <WeddingAndHoneymoonTour/>;
-        case 'RamayanaTour':
+        case 'ramayana-tour':
           return <RamayanaTour/>;
-        case 'WhildLifeSafari':
+        case 'whild-life-safari':
           return <WhildLifeSafari/>;
         default:
           return null;
@@ -36,9 +36,9 @@ const getPackageDetailsComponent = (id) => {
 
 function PackageDetails() {
 
-
-    const { id } = useParams();
-    const packageDetailsComponent = getPackageDetailsComponent(id);
+    const { packageId } = useParams("packageId");
+    
+    const packageDetailsComponent = getPackageDetailsComponent(packageId);
 
     const navigate = useNavigate();
 
@@ -48,8 +48,10 @@ function PackageDetails() {
   return (
     <div className="activity-detail-container">
             
-    <div><button onClick={goBack}>Go Back</button></div>
+    <div>
+      <button onClick={goBack}>Go Back</button></div>
       {packageDetailsComponent}
+     
     </div>
   )
 }

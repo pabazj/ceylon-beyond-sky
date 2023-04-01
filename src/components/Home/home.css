@@ -4,7 +4,7 @@
     justify-content: center;
     position: relative;
     flex-flow: column; 
-    z-index: 0;
+    /* z-index: 0; */
 }
 
 video {
@@ -14,7 +14,8 @@ video {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -1;
+  /* z-index: -1; */
+  /* padding: 0 5rem; */
 }
 .content_container{
   position: absolute;

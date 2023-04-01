@@ -47,16 +47,21 @@ import Diving from './assets/Activities/water.jpg';
 import Balloon from './assets/Activities/balloon.jpg';
 import Camping from './assets/Activities/tent.jpg'
 
+const PACKAGES = '/packages'
+const ACTIVITIES = '/activities'
+const DESTINATIONS = '/destinations'
 
 export const packageList = [
 {
     id: uniqid(),
+    url: `${PACKAGES}/adventure-tour`,
     image: Adventure ,
     title: 'Adventure Tour',
     details: 'Adventure tourism is a type of tourism in which tourist do some adventures activities like as skydiving, hill climbing and scuba diving.'
 },
 {
     id: uniqid(),
+    url: `${PACKAGES}/beach-tour`,
     image: Beach,
     title: 'Beach Tour',
     details: 'Beach tourism is the major segment of holiday tourism that has led to an overall development of tourism in many parts of the world. ',
@@ -64,12 +69,14 @@ export const packageList = [
 },
 {
     id: uniqid(),
+    url: `${PACKAGES}/family-tour`,
     image: Family,
     title: 'Family Tour',
     details: 'Family tourism is driven by the increasing importance placed on promoting family togetherness, keeping family bonds alive and creating family memories.', 
 },
 {
     id: uniqid(),
+    url: `${PACKAGES}/ayurveda-and-wellness`,
     image: Ayuruweda,
     title: 'Ayurveda And Wellness',
     details: 'Sri Lanka is well known for Ayurveda medicine and treatment because of its traditional background and availability of plenty of natural herbs.',
@@ -77,24 +84,28 @@ export const packageList = [
 },
 {
     id: uniqid(),
+    url: `${PACKAGES}/buddhist-culture-and-classic`,
     image: BuddhistCulture,
     title: 'Buddhist Culture And Classic',
     details: 'Being one of the oldest practicing Buddhist countries in the world, it has been recorded that the Lord Buddha had visited Sri Lanka thrice after attaining Buddhahood. ', 
 },
 {
     id: uniqid(),
+    url: `${PACKAGES}/wedding-and-honeymoon-tour`,
     image: Wedding,
     title: 'Wedding And Honeymoon Tour',
     details: 'Sri Lanka has always been an ideal destination for an exotic wedding ceremony and honeymoon. ', 
 },
 {
     id: uniqid(),
+    url: `${PACKAGES}/ramayana-tour`,
     image: Ramayana,
     title: 'Ramayana Tour',
     details: 'This special tour brings you to the roots of the ancient great Indian epic The Ramayana', 
 },
 {
     id: uniqid(),
+    url: `${PACKAGES}/whild-life-safari`,
     image: WildLife,
     title: 'Whild Life Safari',
     details: 'We Offer the best Big Game Safari experiences outside of Sri Lanka ', 
@@ -103,22 +114,26 @@ export const packageList = [
 export const activityList = [
     {
         id: uniqid(),
+        url: `${ACTIVITIES}/cycling`,
         image: Cycling ,
         title: 'Cycling'
     },
     {
         id: uniqid(),
+        url: `${ACTIVITIES}/water-sports`,
         image: Diving ,
         title: 'Water Sports'
         
     },
     {
         id: uniqid(),
+        url: `${ACTIVITIES}/hot-air-ballooning`,
         image: Balloon ,
         title: 'Hot Air ballooning'
     },
     {
         id: uniqid(),
+        url: `${ACTIVITIES}/camping`,
         image: Camping ,
         title: 'Camping'
     }
@@ -126,6 +141,7 @@ export const activityList = [
 export const destinationyList = [
     {
         id: uniqid(),
+        url: `${DESTINATIONS}/anuradhapura`,
         title: 'Anuradhapura',
         paraOne: `Anuradhapura is one of the island’s most famous ancient cities, firmly in place in any tours in Sri
         Lanka.The ancient ruins predating the Christian era puts Anuradhapura in the pantheon of human
@@ -158,6 +174,7 @@ export const destinationyList = [
     },
     {
         id: uniqid(),
+        url: `${DESTINATIONS}/kandy`,
         title: 'Kandy',
         paraOne: `Kandy is a city with graceful charm, radiating an ambiance of antiquity that you will find only in a Sri
         Lanka holiday. Do insist on spending at least two whole days in the city of the last Sinhala Kings of the
@@ -197,6 +214,7 @@ export const destinationyList = [
     },
     {
         id: uniqid(),
+        url: `${DESTINATIONS}/dambulla`,
         title: 'Dambulla',
         paraOne: `The Dambulla Cave Temple is traced to the 1st century BC, and is the most treasured cave temple in
         Asia. It has five caves under a vast rock that overhangs the temple. On the underbelly of the Rock is
@@ -216,6 +234,7 @@ export const destinationyList = [
     },
     {
         id: uniqid(),
+        url: `${DESTINATIONS}/polonnaruwa`,
         title: 'Polonnaruwa',
         paraOne: `Polonnaruwa is an ancient City with some very well preserved ruins despite the damage inflicted by
         invaders, is a must visit place in the itinerary of an all inclusive tour of Sri Lanka. This metropolis of
@@ -244,6 +263,7 @@ export const destinationyList = [
     },
     {
         id: uniqid(),
+        url: `${DESTINATIONS}/galle`,
         title: 'Galle',
         paraOne: `Galle is a port city that has been known to chroniclers of civilizationsm mariners and traders from the
         days of King Solomon. Legends woven about Sri Lanka describe how King Solomon got peacocks and
@@ -282,6 +302,7 @@ export const destinationyList = [
     },
     {
         id: uniqid(),
+        url: `${DESTINATIONS}/colombo`,
         title: 'Colombo',
         paraOne: `Colombo is a city that makes you feel home no sooner you reach it.Known to Roman, Arab and Chinese
         traders for 2000 years as well as Indian traders from Calicut and Gujarat also made it their rendezvous
@@ -322,6 +343,7 @@ export const destinationyList = [
     },
     {
         id: uniqid(),
+        url: `${DESTINATIONS}/sigiriya`,
         title: 'Sigiriya',
         paraOne: `Sigiriya is both a palace and a fortress of stunning splendor, and is a tribute to its ingenious builders. Lest
         we forget to the King who wanted a Sri Lanka Holiday deal in a palace built on the flat top of a rock with
@@ -349,6 +371,7 @@ export const destinationyList = [
     },
     {
         id: uniqid(),
+        url: `${DESTINATIONS}/bentota`,
         title: 'Bentota',
         paraOne: `One of the top 10 beaches in Asia according to the list compiled for Forbes Best Beaches in Asia Awards
         2010, Bentota, which is found next to Beruwala, is a great place for family holidays. Five star holiday
@@ -365,6 +388,7 @@ export const destinationyList = [
     },
     {
         id: uniqid(),
+        url: `${DESTINATIONS}/jaffna`,
         title: 'Jaffna',
         paraOne: `Jaffna is one of the oldest human settlements in the peninsular region of Northern Sri Lanka. The city
         was the epicenter of a decade’s long conflict that has now ended. An old resident says in his blog “the
@@ -390,6 +414,7 @@ export const destinationyList = [
     },
     {
         id: uniqid(),
+        url: `${DESTINATIONS}/nuwaraeliya`,
         title: 'Nuwaraeliya',
         paraOne: `Known as Little England, the town of Nuwara Eliya enjoys spring-like weather throughout the year. A
         favorite retreat of the British during colonial times, the town is dotted with English country style houses
@@ -414,6 +439,7 @@ export const destinationyList = [
     },
     {
         id: uniqid(),
+        url: `${DESTINATIONS}/ella`,
         title: 'Ella',
         paraOne: `Ella is a small yet beautiful town in the district of Badulla in the province of Uva, Sri Lanka, which is
         administered by the Urban Council. Ella is roughly 200 kilometers (120 mi) east of Colombo and is at an
@@ -431,6 +457,7 @@ export const destinationyList = [
     },
     {
         id: uniqid(),
+        url: `${DESTINATIONS}/mirissa`,
         title: 'Mirissa',
         paraOne: `Mirissa is a small town on the south coast of Sri Lanka, situated in the Southern Province of Matara. It is
         about 150 kilometers (93 mi) south of Colombo and is located at an elevation of 4 meters (13 ft) above
@@ -445,6 +472,7 @@ export const destinationyList = [
     },
     {
         id: uniqid(),
+        url: `${DESTINATIONS}/yala`,
         title: 'Yala',
         paraOne: `Yala is a huge land area of lagoons and grasslands, making it a perfect and lusty living home for various
         animal species. The Yala Safari takes you closer to all this glory. Known as the world’s leopard kingdom,
@@ -467,6 +495,7 @@ export const destinationyList = [
     },
     {
         id: uniqid(),
+        url: `${DESTINATIONS}/udawalawa`,
         title: 'Udawalawa',
         paraOne: `Udawalawe National Park is one of the best wildlife safari choices on the planet for witnessing
         magnificent mammals, birds, reptiles, and many other animal species. The name Udawalawe is famous
@@ -488,6 +517,7 @@ export const destinationyList = [
     },
     {
         id: uniqid(),
+        url: `${DESTINATIONS}/rainforest`,
         title: 'Rainforest',
         paraOne: `Rainforests are incredible places which cover only 6% of the surface area of the Earth, however more
         than half of the world’s plant and animal species lives in them. The reason they are called rainforests is
@@ -548,6 +578,7 @@ export const destinationyList = [
     },
     {
         id: uniqid(),
+        url: `${DESTINATIONS}/horton-plains`,
         title: 'Horton Plains',
         paraOne: `Located at an altitude over 2000 meters, the Horton Plains is a nature’s gift. The national park, in the
         central part of the island country, is a so different from the other frequently visited national parks, it is

@@ -11,6 +11,7 @@ function Home() {
         <h3>Discover Sri Lanka</h3>
         <h4>Take a break & Relax</h4>
       </div>
+     
     </div>
   )
 }

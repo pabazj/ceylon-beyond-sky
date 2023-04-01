@@ -18,7 +18,7 @@
   --color-secondary: rgb(64, 130, 109);
   --color-dark: #000029;
 
-  --transition: all 400ms ease;
+  /* --transition: all 400ms ease; */
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
@@ -35,7 +35,9 @@ html {
 
 body {
    font-family: 'Poppins', sans-serif;
+   letter-spacing: 0.7px;
    min-height: 100vh;
+   transition: scroll-behavior 0.3s ease-in-out;
 }
 
 .container {
@@ -83,25 +85,8 @@ a:hover {
 }
 
 .btn:hover{
-  /* background: var(--color-white);
-  color: var(--color-bg); */
   border-color: transparent;
 }
-
-/* .btn {
-  background-color: transparent;
-  cursor: pointer;
-  overflow: hidden;
-  border: 1px solid transparent;
-  transition: var(---transition);
-  border-color: turquoise;
-}
-
-.btn:hover {
-  border-color: turquoise;
-  background: #000029;
-  color: white;
-} */
 
 .btn-primary {
   background: var(--color-primary);
@@ -117,22 +102,12 @@ img{
 /* on tablets */
 @media screen and (max-width: 1024px) {
   .container{
-    /* width: var(--container-width-md) */
   }
-
-  /* section {
-    margin-top: 6rem;;
-  } */
 }
 
 /* on mobile phones */
 @media screen and (max-width: 600px) {
   .container{
-    /* width: var(--container-width-sm) */
   }
-
-  /* section > h2 {
-    margin-bottom: 2rem;;
-  } */
 }
 
