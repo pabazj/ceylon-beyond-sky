@@ -169,4 +169,35 @@
     text-decoration:underline;
     background-color: transparent;
   }
+
+  .activity_post_container {
+    padding: 3rem;
+  }
+
+  .activity_post_container h2{
+    font-size:1.5rem;
+    color:#2c3050;
+    padding-bottom: 1rem; 
+  }
+
+    
+  @media screen and (max-width: 850px) {
+    .activity_post_container {
+        padding: 1rem;
+      }
+    
+    }
+  
+    @media screen and (max-width: 600px) {
+      .activity-detail-container{
+        padding: 1rem;
+      }
+      .activity_post_container {
+        padding: 1rem;
+      }
+    }
+
+    
+  
+
   
