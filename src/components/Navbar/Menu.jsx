@@ -44,10 +44,7 @@ const Menu = ({ items, handleClick, showMenu , setShowMenu}) => {
   }
 
   const handleLinkClick= () => {
-    // if(!isSubMenuVisible) {
-    //   setShowMenu(false)
-    // }
-    // setShowMenu(false)
+    setShowMenu(false)
    
   }
 
