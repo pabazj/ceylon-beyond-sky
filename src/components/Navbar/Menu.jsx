@@ -4,7 +4,7 @@ import Dropdown from './Dropdown';
 import { BsChevronDown } from 'react-icons/bs'
 import './navbar.css'
 
-const Menu = ({ items, handleClick, showMenu }) => {
+const Menu = ({ items, handleClick, showMenu , setShowMenu}) => {
 
   const [isSubMenuVisible, setIsSubMenuVisible] = useState(false)
   const [prevItems, setPrevItems] = useState(null);
@@ -43,14 +43,22 @@ const Menu = ({ items, handleClick, showMenu }) => {
     
   }
 
+  const handleLinkClick= () => {
+    // if(!isSubMenuVisible) {
+    //   setShowMenu(false)
+    // }
+    // setShowMenu(false)
+   
+  }
+
   return (
     <li onMouseEnter={() => handleMouseEnter(items)} onMouseLeave={handleMouseLeave} onClick={() => handleOnClick(items)} >
-      <Link to={items.submenu ? '/' : items.url} className='text-link'>
+      <Link to={items.submenu ? '/' : items.url} className='text-link'  onClick={items.submenu ? null : handleLinkClick}>
         <span> {items.title} </span>
         {items.submenu && <BsChevronDown />}
       </Link >
       {items.submenu && activeItem === items &&(
-        <Dropdown submenus={items.submenu} isSubMenuVisible={isSubMenuVisible} />
+        <Dropdown submenus={items.submenu} isSubMenuVisible={isSubMenuVisible} setShowMenu={setShowMenu} />
       )}
     </li>
   );

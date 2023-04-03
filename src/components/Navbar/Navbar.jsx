@@ -28,7 +28,7 @@ function Navbar() {
 
                 <ul className={showMenu ? 'nav-menu active' : 'nav-menu'}>
                     {menuItems && menuItems.map((menu, index) => (
-                        <Menu items={menu} key={index} handleClick={handleClick} showMenu={showMenu} />
+                        <Menu items={menu} key={index} handleClick={handleClick} showMenu={showMenu} setShowMenu={setShowMenu} />
                     ))}
 
                 </ul>

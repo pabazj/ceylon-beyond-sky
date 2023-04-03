@@ -165,6 +165,7 @@ display: none;
     align-items: center;
     background-color: white;
     z-index: 999;
+    overflow-y: scroll;
 }
 .navbar > ul {
   padding-top: 20px; /* add some padding to create space */
