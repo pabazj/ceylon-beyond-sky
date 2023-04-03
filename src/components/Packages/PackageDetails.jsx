@@ -46,10 +46,8 @@ function PackageDetails() {
       navigate(-1);
     };
   return (
-    <div className="activity-detail-container">
-            
-    <div>
-      <button onClick={goBack}>Go Back</button></div>
+    <div className="package-detail-container">
+        <h1>{packageId}</h1>
       {packageDetailsComponent}
      
     </div>

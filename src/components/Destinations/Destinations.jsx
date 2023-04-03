@@ -15,7 +15,7 @@ function Destinations() {
       <div className="container">
         <img src={Surfing} alt="Notebook" style={{ width: '100%' }} />
         <div className="content">
-          <h2 >Travel Destinations</h2>
+          {/* <h2 >Travel Destinations</h2> */}
           <div className="grid-container">
             {destinationyList.map(item => (
               <p key={item.id} className="grid-item">

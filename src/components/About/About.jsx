@@ -4,7 +4,7 @@ import './about.css';
 function About() {
   return (
     <section name='about'>
-      <h2>About</h2>
+      {/* <h2>About</h2> */}
       <div className='about'>
         <p>The Isle of Serendipity, followed by many other nicknames, Sri Lanka is an island
           country located outwards the southern coast of India encircled by the Indian

@@ -32,7 +32,7 @@ text-decoration: none;
 }
 
 .arrow {
-  border: solid var(--color-primary);
+  border: solid #8EEBEC;;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;

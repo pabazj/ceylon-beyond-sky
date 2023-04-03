@@ -4,7 +4,7 @@ import Dropdown from './Dropdown';
 import { BsChevronDown } from 'react-icons/bs'
 import './navbar.css'
 
-const Menu = ({ items }) => {
+const Menu = ({ items, handleClick }) => {
 
   const [isSubMenuVisible, setIsSubMenuVisible] = useState(false)
   const [prevItems, setPrevItems] = useState(null);

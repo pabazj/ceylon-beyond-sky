@@ -2,7 +2,7 @@ import uniqid from 'uniqid';
 
 import Adventure from'./assets/Packages/adventure/rafting.jpg';
 import Ayuruweda from'./assets/Packages/ayuruweda/spa.jpg';
-import Beach from'./assets/Packages/beach/Surfing.jpg';
+import Beach from'./assets/Packages/beach/SurfingEvening.jpg';
 import BuddhistCulture from'./assets/Packages/buddhisit_culture/polonnaruwa.jpg';
 import Family from'./assets/Packages/family_tour/Village.jpg';
 import Ramayana from'./assets/Packages/ramayana/Slaya.jpg';
@@ -115,29 +115,34 @@ export const activityList = [
     {
         id: uniqid(),
         url: `${ACTIVITIES}/cycling`,
-        image: Cycling ,
-        title: 'Cycling'
+        icon: 'cycling' ,
+        title: 'Cycling',
+        description: 'Enjoy the freedom of two wheels and explore the great outdoors'
     },
     {
         id: uniqid(),
         url: `${ACTIVITIES}/water-sports`,
-        image: Diving ,
-        title: 'Water Sports'
+       icon: 'kayaking' ,
+        title: 'Water Sports',
+        description: 'Experience the thrill of adrenaline-pumping aquatic activities'
         
     },
     {
         id: uniqid(),
         url: `${ACTIVITIES}/hot-air-ballooning`,
-        image: Balloon ,
-        title: 'Hot Air ballooning'
+        icon: 'balloon' ,
+        title: 'Hot Air ballooning',
+        description: 'Soar high above and take in breathtaking views from the sky'
     },
     {
         id: uniqid(),
         url: `${ACTIVITIES}/camping`,
-        image: Camping ,
-        title: 'Camping'
+        icon: 'camping' ,
+        title: 'Camping',
+        description: 'Unwind in nature, escape the hustle and bustle, and recharge your soul'
     }
 ]
+
 export const destinationyList = [
     {
         id: uniqid(),
@@ -605,4 +610,3 @@ export const destinationyList = [
         imageTwo:HortonPlainsTwo
     }
 ]
-

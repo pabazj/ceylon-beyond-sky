@@ -14,8 +14,8 @@ function Main() {
     <>
     <Outlet />
     <Home/>
-    <Packages/>
     <Activities/>
+    <Packages/>
     <Destinations/>
     <Footer/>
     </>

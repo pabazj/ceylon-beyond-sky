@@ -8,6 +8,29 @@ export const menuItems = [
         url: '/about',
     },
     {
+        title: 'Activities',
+        url: '/activities',
+        option: 'activities',
+        submenu: [
+            {
+                title: 'Cycling',
+                url: '/activities/cycling',
+            },
+            {
+                title: 'Water Sports',
+                url: '/activities/water-sports',
+            },
+            {
+                title: 'Hot Air ballooning',
+                url: '/activities/hot-air-ballooning',
+            },
+            {
+                title: 'Camping',
+                url: '/activities/camping',
+            },
+        ],
+    },
+    {
         title: 'Packages',
         url: '/packages',
         option: 'packages',
@@ -43,29 +66,6 @@ export const menuItems = [
             {
                 title: 'WhildLife Safari',
                 url: '/packages/whild-life-safari',
-            },
-        ],
-    },
-    {
-        title: 'Activities',
-        url: '/activities',
-        option: 'activities',
-        submenu: [
-            {
-                title: 'Cycling',
-                url: '/activities/cycling',
-            },
-            {
-                title: 'Water Sports',
-                url: '/activities/water-sports',
-            },
-            {
-                title: 'Hot Air ballooning',
-                url: '/activities/hot-air-ballooning',
-            },
-            {
-                title: 'Camping',
-                url: '/activities/camping',
             },
         ],
     },

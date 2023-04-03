@@ -94,27 +94,100 @@
   }
  
 
+  .post_container {
+    padding: 3rem;
+  }
+
+  .post_container h2{
+    font-size:1.5rem;
+    color:#2c3050;
+    padding-bottom: 1rem; 
+  }
+
+  /* .post h3{
+    font-size:1rem;
+    color:#2c3050;
+  } */
+  
+  .quote{
+    border-left:3px solid #1bbc9d;
+    padding-left:5px;
+  }
+  
+  .date{
+    color:#1bbc9d;
+    text-transform:uppercase;
+    letter-spacing:0.2rem;
+  }
+  
+  hr{
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(44,62,80, 0), rgba(44,62,80, 0.75), rgba(44,62,80, 0));
+  }
+  
+  .post{
+    margin-bottom:20px;
+  }
+
+  .package-detail-container {
+    padding: 2rem 5rem;
+    }
+
+    .package-detail-container h3, h4{
+      font-size: smaller;
+      padding-top: 1rem;
+       } 
+    .package-detail-container p{
+     font-size: smaller;
+     padding-top: 1rem;
+      }
+  
+    .package-detail-container li{
+      font-size: smaller;
+    }
+  
+  
   @media screen and (max-width: 850px) {
-  .package_container{
-      display:grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap:0.5rem;
-      padding: 1rem;
-  }
-
-  .article-body {
-    padding: 14px;
-  }
-  .article-body h2{
-    font-size: 1.2rem;
-    margin: 0;
-  }
-    .article-body .article-details {
-      display: none;
+    .package_container{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:0.5rem;
+        padding: 1rem;
     }
-
-    .package_container .button {
-      position:relative
+  
+    .article-body {
+      padding: 14px;
     }
-  }
+    .article-body h2{
+      font-size: 1.2rem;
+      margin: 0;
+    }
+      .article-body .article-details {
+        display: none;
+      }
+  
+      .package_container .button {
+        position:relative
+      }
+  
+      /* .package-detail-container{
+        padding-top: 3rem;
+      } */
+      .post_container {
+        padding: 1rem;
+      }
+    
+    }
+  
+    @media screen and (max-width: 600px) {
+      .package-detail-container{
+        padding: 1rem;
+      }
+      .post_container {
+        padding: 1rem;
+      }
+    }
+  
+  
 

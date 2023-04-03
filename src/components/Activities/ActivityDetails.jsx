@@ -35,9 +35,7 @@ function ActivityDetails() {
   
     return (
         <div className="activity-detail-container">
-            
-        <div><button onClick={goBack}>Go Back</button></div>
-          {/* <h1>{id}</h1> */}
+          <h1>{activityId}</h1>
           {activityDetailsComponent}
         </div>
       );
