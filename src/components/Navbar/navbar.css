@@ -28,6 +28,7 @@
   .navbar li {
     display: inline-block;
     z-index: 999;
+    position: relative;
   }
   
   .navbar .text-link {
@@ -55,6 +56,8 @@
     background-color: white;
     z-index: 999;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    top: 100%;
+    left: 0;
   }
   
   .navbar li:hover > ul {
@@ -94,7 +97,7 @@
     padding: 0;
 }
 
-.navbar .nav-menu.active {
+/* .navbar .nav-menu.active {
     position: absolute;
     top: 80px;
     left: 0;
@@ -106,7 +109,7 @@
     align-items: center;
     background-color: white;
     z-index: 999;
-}
+} */
 
 .navbar .text-link {
     color: rgb(13, 26, 38);
@@ -138,7 +141,51 @@ display: none;
 
 @media (max-width: 768px) {
 
-  .navbar .navbar {
+  .navbar .logo{
+    display: none;
+  }
+  .navbar .hamburger-menu{
+    display: flex;
+    margin-left: auto;
+    padding: 30px;
+  }
+
+  .navbar .nav-menu {
+   display: none;
+  }
+  .navbar .nav-menu.active {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(80vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    z-index: 999;
+}
+.navbar > ul {
+  padding-top: 20px; /* add some padding to create space */
+}
+
+.navbar ul ul {
+  display: none;
+  position: relative; /* position relative to parent li element */
+  background-color: white;
+  z-index: 999;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  top: 0; /* position at the top of the parent li element */
+  left: 0;
+  overflow-y: scroll;
+}
+
+  /* .navbar nav {
+    display: flex;
+    flex-direction: column;
+  } */
+  /* .navbar .navbar {
     background: rgb(13, 26, 38);
     color: white;
     padding: 0;
@@ -182,7 +229,7 @@ display: none;
   }
 
   .navbar .text-link {
-    color: white;
+    color: black;
   }
 
   .navbar .logo {
@@ -191,5 +238,6 @@ display: none;
   .navbar .hamburger-menu {
    display: flex;
    justify-content: flex-end;
-    }
+    } */
+    
 }
