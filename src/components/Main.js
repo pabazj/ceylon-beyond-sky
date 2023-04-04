@@ -5,7 +5,6 @@ import Packages from './Packages/Packages';
 import Activities from './Activities/Activities';
 import About from './About/About';
 import Destinations from './Destinations/Destinations'
-import Footer from './Footer/Footer'
 import { Outlet } from "react-router-dom";
 
 
@@ -17,7 +16,6 @@ function Main() {
     <Activities/>
     <Packages/>
     <Destinations/>
-    <Footer/>
     </>
   )
 }

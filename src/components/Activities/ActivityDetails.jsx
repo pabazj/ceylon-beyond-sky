@@ -35,7 +35,7 @@ function ActivityDetails() {
   
     return (
         <div className="activity-detail-container">
-          <h1>{activityId}</h1>
+          {/* <h1>{activityId}</h1> */}
           {activityDetailsComponent}
         </div>
       );

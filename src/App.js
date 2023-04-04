@@ -16,22 +16,29 @@ import NavBar from './components/Navbar/Navbar';
 
 import GoToTop from './utill/GoToTop'
 
+import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
+
 function App() {
 
   return (
    <>
       {/* <Router> */}
       {/* <ScrollToTop/> */}
-        <Navbar/>
+      <header>
+      <Navbar/>
+      </header>
+     
       <Routes>
         <Route  path="/" element={<Main />} />
         <Route  path="/about" element={<About />} />
         <Route path="packages/:packageId" element={<PackageDetails />} />
         <Route  path="activities/:activityId" element={<ActivityDetails />} />
         <Route  path="destinations/:destinationId" element={<DestinationDetils />} />
+        <Route  path="/contact" element={<Contact />} />
       </Routes>
     {/* </Router> */}
-
+    <Footer/>
    </>
   );
 }

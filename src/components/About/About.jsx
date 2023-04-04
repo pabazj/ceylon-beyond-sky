@@ -3,10 +3,11 @@ import './about.css';
 
 function About() {
   return (
-    <section name='about'>
+    <div name='about' className='about-container'>
       {/* <h2>About</h2> */}
-      <div className='about'>
-        <p>The Isle of Serendipity, followed by many other nicknames, Sri Lanka is an island
+      <div className='about-wrapper'>
+        <h2> CEYLON BEYOND SKY</h2>
+      <p>The Isle of Serendipity, followed by many other nicknames, Sri Lanka is an island
           country located outwards the southern coast of India encircled by the Indian
           Ocean.Lying closer to the equator, this vibrant land of comfort is proven to be a
           Paradise as it is in between the tropics. Therefore, the country dwells in a tropical
@@ -49,8 +50,12 @@ function About() {
           <li>This activity is not wheelchair accessible.</li>
         </ul>
         </div>
-        </div>
-    </section>
+      </div>
+
+      {/* <div className='about'>
+      
+        </div> */}
+    </div>
   )
 }
 

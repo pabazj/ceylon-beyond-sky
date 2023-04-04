@@ -1,4 +1,4 @@
-.about{
+/* .about{
     text-align: start;
     padding: 1rem 5rem;
 }
@@ -15,5 +15,31 @@
     .list {
         padding: 0;
         list-style: disc;
+    }
+} */
+
+.about-container {
+    padding: 3rem 5rem;
+}
+.about-wrapper{
+    padding: 5rem;
+}
+
+.about-wrapper h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+    .about-container {
+        padding: 1rem;
+    }
+    .about-wrapper{
+        padding: 1rem;
+    }
+    
+    .about-wrapper h2 {
+        text-align: center;
+        padding-top: 5rem;
     }
 }

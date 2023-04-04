@@ -42,11 +42,6 @@ import UdawalawaTwo from './assets/Destinations/Udawalawa/image2.jpg';
 import YalaOne from './assets/Destinations/Yala/image1.jpg';
 import YalaTwo from './assets/Destinations/Yala/image2.jpg';
 
-import Cycling from './assets/Activities/cycling.jpg';
-import Diving from './assets/Activities/water.jpg';
-import Balloon from './assets/Activities/balloon.jpg';
-import Camping from './assets/Activities/tent.jpg'
-
 const PACKAGES = '/packages'
 const ACTIVITIES = '/activities'
 const DESTINATIONS = '/destinations'

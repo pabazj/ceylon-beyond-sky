@@ -140,4 +140,8 @@ export const menuItems = [
             },
         ],
     },
+    {
+        title: 'Contact Us',
+        url: '/contact',
+    },
 ];

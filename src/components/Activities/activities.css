@@ -46,7 +46,7 @@
   }
 
   .activity-detail-container {
-  padding: 2rem 5rem;
+  padding: 3rem 5rem;
   }
 
   .activity-detail-container h3, h4{
@@ -185,6 +185,9 @@
     .activity_post_container {
         padding: 1rem;
       }
+      .activity-detail-container article {
+        padding-top: 3rem;
+      }
     
     }
   
@@ -194,6 +197,9 @@
       }
       .activity_post_container {
         padding: 1rem;
+      }
+      .activity-detail-container article {
+        padding-top: 3rem;
       }
     }
 

@@ -12,7 +12,7 @@ function Destinations() {
     <section name="destinations">
       <h2>Destinations</h2>
 
-      <div className="container">
+      <div className="container_des">
         <img src={Surfing} alt="Notebook" style={{ width: '100%' }} />
         <div className="content">
           {/* <h2 >Travel Destinations</h2> */}

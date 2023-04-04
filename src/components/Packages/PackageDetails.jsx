@@ -47,7 +47,7 @@ function PackageDetails() {
     };
   return (
     <div className="package-detail-container">
-        <h1>{packageId}</h1>
+        {/* <h1>{packageId}</h1> */}
       {packageDetailsComponent}
      
     </div>
