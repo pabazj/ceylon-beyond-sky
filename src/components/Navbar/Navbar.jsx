@@ -3,6 +3,8 @@ import { menuItems } from './menuItems'
 import Menu from './Menu'
 import { CgMenu } from 'react-icons/cg';
 
+import Logo from '../../assets/logo.jpg'
+
 import './navbar.css'
 
 function Navbar() {
@@ -19,8 +21,8 @@ function Navbar() {
         <>
             <nav className='navbar'>
                 <div className='logo'>
+                <img src={Logo} />
                     <h2>Ceylon Beyond Sky</h2>
-
                 </div>
                 <div className='hamburger-menu' onClick={handleClick}>
                     <CgMenu />

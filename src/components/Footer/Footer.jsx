@@ -14,7 +14,6 @@ function Footer() {
       <h2 className="ft-title"> <FaMapMarkedAlt/> Us</h2>
       <div>
       <p>34 B 1/1 , Soma Devi Place, </p>
-      {/* <p>Soma Devi Place, </p> */}
       <p>Kirulapone , Colombo 05 </p>
       <p>Sri Lanka</p>
       </div>
