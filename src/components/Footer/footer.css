@@ -104,3 +104,12 @@ footer ul {
         padding-top: 0.5rem;
       }
   }
+
+  @media screen and (max-width: 600px) {
+    .image-row img {
+      height: 50px; 
+      max-width: 80px; 
+      /* width: auto;
+      object-fit: contain; */
+    }
+  }

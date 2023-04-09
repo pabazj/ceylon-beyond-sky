@@ -3,7 +3,7 @@ import { menuItems } from './menuItems'
 import Menu from './Menu'
 import { CgMenu } from 'react-icons/cg';
 
-import Logo from '../../assets/logo.jpg'
+import Logo from '../../assets/logo.png'
 
 import './navbar.css'
 
