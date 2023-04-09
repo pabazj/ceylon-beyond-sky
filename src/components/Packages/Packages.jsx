@@ -17,6 +17,7 @@ function Packages() {
           <article key={item.id}>
             <div className="article-wrapper">
               <figure>
+                {/* <img src={item.image} alt="" /> */}
                 <img src={item.image} alt="" />
               </figure>
               <div className="article-body">
@@ -24,8 +25,8 @@ function Packages() {
                 <p className="article-details">
                   {item.details}
                 </p>
-                <p>
-                <Link to={item.url} ><button className="button" >Details</button></Link>
+                <p className="view-detail">
+                <Link to={item.url} ><button className="button" >More Details</button></Link>
                 </p>
               </div>
             </div>

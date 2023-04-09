@@ -1,6 +1,6 @@
 .package_container{
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap:1.5rem;
     padding: 2rem 5rem;
 }
@@ -48,12 +48,19 @@
   }
 
   .article-body p{
-    padding: 1rem;
+    /* padding: 1rem; */
+    padding: 1rem 1rem 1.5rem 1rem;
   }
+
+  /* .article-body .view-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
   
   .package_container article:has(:hover, :focus) {
     --img-scale: 1.1;
-    --title-color: #28666e;
+    --title-color: #1bbc9d;
     --link-icon-translate: 0;
     --link-icon-opacity: 1;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -84,7 +91,7 @@
     background-color: #000;
     text-align: center;
     cursor: pointer;
-    width: 90%;
+    /* width: 90%; */
     position:absolute;
     bottom:1rem;
   }
@@ -99,9 +106,9 @@
   }
 
   .post_container h2{
-    font-size:1.5rem;
+    font-size:1.7rem;
     color:#2c3050;
-    padding-bottom: 1rem; 
+    /* padding-bottom: 1rem;  */
   }
 
   /* .post h3{
@@ -135,16 +142,16 @@
     }
 
     .package-detail-container h3, h4{
-      font-size: smaller;
+      font-size: 14px;
       padding-top: 1rem;
        } 
     .package-detail-container p{
-     font-size: smaller;
+     font-size: 14px;
      padding-top: 1rem;
       }
   
     .package-detail-container li{
-      font-size: smaller;
+      font-size: 14px;
     }
   
   
@@ -168,7 +175,8 @@
       }
   
       .package_container .button {
-        position:relative
+        /* position:relative */
+        width: 80%;
       }
   
       /* .package-detail-container{
@@ -179,6 +187,10 @@
       }
       .package-detail-container article {
         padding-top: 3rem;
+      }
+
+      .article-body p{
+        padding: 1rem;
       }
     
     }
@@ -192,6 +204,18 @@
       }
       .package-detail-container article {
         padding-top: 3rem;
+      }
+      .article-body p{
+        /* padding: 1rem; */
+        padding: 1rem;
+      }
+
+      .article-body {
+        padding: 0;
+      }
+
+      .package_container .button {
+        position:relative
       }
     }
   

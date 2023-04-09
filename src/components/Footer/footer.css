@@ -17,8 +17,15 @@ footer ul {
   }
   .ft-title {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
   }
+
+  .ft-title .icon-style {
+    margin-right: 10px;
+  }
+
   .ft-main-item p{
     font-size: small;
   }
@@ -70,6 +77,20 @@ footer ul {
   }
   .footer-container {
     padding-top: 1rem;
+  }
+
+  .image-row {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-row img {
+    /* flex: 1;  */
+  height: 100px; 
+  max-width: 100%; 
+  width: auto;
+  object-fit: contain;
   }
 
   @media screen and (max-width: 850px) {

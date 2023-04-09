@@ -18,13 +18,12 @@ import GoToTop from './utill/GoToTop'
 
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import NotFound from './components/NotFound/NotFound'
 
 function App() {
 
   return (
    <>
-      {/* <Router> */}
-      {/* <ScrollToTop/> */}
       <header>
       <Navbar/>
       </header>
@@ -36,8 +35,8 @@ function App() {
         <Route  path="activities/:activityId" element={<ActivityDetails />} />
         <Route  path="destinations/:destinationId" element={<DestinationDetils />} />
         <Route  path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
-    {/* </Router> */}
     <Footer/>
    </>
   );

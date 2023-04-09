@@ -1,7 +1,48 @@
-import React from 'react'
+import React , { useState }from 'react'
 import './contact.css'
 
 function Contact() {
+
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        country: "",
+        phone: "",
+        message: "",
+      });
+
+      const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+      };
+    
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+    
+        // Send form data to Formspree endpoint
+        const response = await fetch("https://formspree.io/f/mbjeplza", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+    
+        if (response.ok) {
+          console.log("Email sent successfully!");
+          // Reset form data
+          setFormData({
+            name: "",
+            email: "",
+            country: "",
+            phone: "",
+            message: "",
+          });
+        } else {
+          console.error("Failed to send email.");
+        }
+      };
+
     return (
         <div name='contact' className='contct-container'>
             <div className='contact-wrapper'>
@@ -18,22 +59,25 @@ function Contact() {
                         </div>
                         <div className="right-container">
                             <div className="right-inner-container">
-                                <form action="#">
+                                <form onSubmit={handleSubmit}>
                                     <h2 className="lg-view">Enquire Us</h2>
                                     <h2 className="sm-view">Let's Chat</h2>
                                     <p>* Required</p>
-                                    <div className="social-container">
+                                    {/* <div className="social-container">
                                         <a href="#" className="social"><i className="fab fa-facebook-f"></i></a>
                                         <a href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
                                         <a href="#" className="social"><i className="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                    <input type="text" placeholder="Name *" />
-                                    <input type="email" placeholder="Email *" />
-                                    <input type="text" placeholder="Country" />
-                                    <input type="phone" placeholder="Phone" />
-                                    <textarea rows="4" placeholder="Message"></textarea>
+                                    </div> */}
+                                    <input type="text" placeholder="Name *" name="name" value={formData.name} onChange={handleInputChange}/>
+                                    <input type="email" placeholder="Email *" name="email" value={formData.email} onChange={handleInputChange}/>
+                                    <input type="text" placeholder="Country" name="country" value={formData.country} onChange={handleInputChange} />
+                                    <input type="tel" placeholder="Phone" name="phone" value={formData.phone} onChange={handleInputChange} />
+                                    <textarea rows="4" placeholder="Message" name="message" value={formData.message} onChange={handleInputChange}></textarea>
                                     <button>Submit</button>
                                 </form>
+
+                                
+
                             </div>
                         </div>
                     </div>

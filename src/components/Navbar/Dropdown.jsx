@@ -9,7 +9,7 @@ const Dropdown = ({ submenus, isSubMenuVisible, setShowMenu}) => {
       <ul  style={{ display: isSubMenuVisible ? 'block' : 'none' }}>
         {submenus && submenus.map((submenu, index) => (
           <li key={index}>
-             <Link to={submenu.url} className='text-link'  onClick={handleLinkClick}>{submenu.title}</Link>
+             <Link to={submenu.url} className='text-link'  onClick={handleLinkClick}><b>{submenu.title}</b></Link>
           </li>
         ))}
       </ul>

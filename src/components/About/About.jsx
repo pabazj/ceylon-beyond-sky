@@ -6,7 +6,7 @@ function About() {
     <div name='about' className='about-container'>
       {/* <h2>About</h2> */}
       <div className='about-wrapper'>
-        <h2> CEYLON BEYOND SKY</h2>
+        <h2> Ceylon Beyond Sky</h2>
       <p>The Isle of Serendipity, followed by many other nicknames, Sri Lanka is an island
           country located outwards the southern coast of India encircled by the Indian
           Ocean.Lying closer to the equator, this vibrant land of comfort is proven to be a
@@ -31,7 +31,7 @@ function About() {
         <p>Explore tailor-made tour itineraries, or contact us to get your bespoke tour
           coordinated by Ceylon Beyond Sky travel experts!</p>
      
-      
+          <br/>
       <p><strong>Know before you go</strong></p>
       <div className="list">
         <ul>

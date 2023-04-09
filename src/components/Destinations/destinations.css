@@ -9,6 +9,7 @@
 .grid-item {
   padding: 1px;
   text-align: start;
+  font-size: 18px;
 }
 .grid-item a{ 
 text-decoration: none;
@@ -32,7 +33,7 @@ text-decoration: none;
 }
 
 .arrow {
-  border: solid #8EEBEC;;
+  border: solid #1bbc9d;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -48,16 +49,16 @@ text-decoration: none;
   }
 
   .destination-detail-container h3, h4{
-    font-size: smaller;
+    font-size: 14px;
     padding-top: 1rem;
      } 
   .destination-detail-container p{
-   font-size: smaller;
-   padding-top: 1rem;
+   font-size: 14px;
+   /* padding-top: 1rem; */
     }
 
   .destination-detail-container li{
-    font-size: smaller;
+    font-size: 14px;
   }
 
   .destination-detail-container img {
@@ -81,9 +82,9 @@ text-decoration: none;
   }
 
   .destination_post_container h2{
-    font-size:1.5rem;
+    font-size:1.7rem;
     color:#2c3050;
-    padding-bottom: 1rem; 
+    /* padding-bottom: 1rem;  */
   }
 
   .destination_image_container{

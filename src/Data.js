@@ -8,6 +8,7 @@ import Family from'./assets/Packages/family_tour/Village.jpg';
 import Ramayana from'./assets/Packages/ramayana/Slaya.jpg';
 import Wedding from'./assets/Packages/wedding_honeymoon/Lovers.jpg';
 import WildLife from'./assets/Packages/wild_life_safari/safari.jpg';
+import WheelchairTravel from './assets/Packages/differently_abled_tour/WheelchairTravel.jpeg'
 
 import AnuradhapuraOne from './assets/Destinations/Anuradapura/image1.jpg';
 import AnuradhapuraTwo from './assets/Destinations/Anuradapura/image2.jpg';
@@ -105,6 +106,13 @@ export const packageList = [
     title: 'Whild Life Safari',
     details: 'We Offer the best Big Game Safari experiences outside of Sri Lanka ', 
 },
+{
+    id: uniqid(),
+    url: `${PACKAGES}/differently-abled-tour`,
+    image: WheelchairTravel,
+    title: 'Differently Abled Tour',
+    details: 'Differently abled holidays Sri Lanka are purely designed for people with different abilities especially for differently abled children. ', 
+},
 ]
 export const activityList = [
     {
@@ -112,14 +120,16 @@ export const activityList = [
         url: `${ACTIVITIES}/cycling`,
         icon: 'cycling' ,
         title: 'Cycling',
-        description: 'Enjoy the freedom of two wheels and explore the great outdoors'
+        description: 'Enjoy the freedom of two wheels and explore the great outdoors',
+        image: 'https://cdn.kimkim.com/files/a/content_articles/featured_photos/f055f2981a4fe10ae884ea93aada96def6d032f3/big-62ee7fae35f46af5fbac73b96a025113.jpg'
     },
     {
         id: uniqid(),
         url: `${ACTIVITIES}/water-sports`,
        icon: 'kayaking' ,
         title: 'Water Sports',
-        description: 'Experience the thrill of adrenaline-pumping aquatic activities'
+        description: 'Experience the thrill of adrenaline-pumping aquatic activities',
+        image: 'https://media-cdn.tripadvisor.com/media/photo-s/11/a9/e8/db/river-rafting-in-dandeli.jpg'
         
     },
     {
@@ -127,14 +137,16 @@ export const activityList = [
         url: `${ACTIVITIES}/hot-air-ballooning`,
         icon: 'balloon' ,
         title: 'Hot Air ballooning',
-        description: 'Soar high above and take in breathtaking views from the sky'
+        description: 'Soar high above and take in breathtaking views from the sky',
+        image: 'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0b/21/f8/93.jpg'
     },
     {
         id: uniqid(),
         url: `${ACTIVITIES}/camping`,
         icon: 'camping' ,
         title: 'Camping',
-        description: 'Unwind in nature, escape the hustle and bustle, and recharge your soul'
+        description: 'Unwind in nature, escape the hustle and bustle, and recharge your soul',
+        image : 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/6c/b8/00/tent-at-night.jpg?w=1200&h=-1&s=1'
     }
 ]
 

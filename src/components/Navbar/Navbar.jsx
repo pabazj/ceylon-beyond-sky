@@ -22,7 +22,11 @@ function Navbar() {
             <nav className='navbar'>
                 <div className='logo'>
                 <img src={Logo} />
-                    <h2>Ceylon Beyond Sky</h2>
+                <div className="logo-text">
+                <h2>Ceylon Beyond Sky</h2>
+                <p >Land like no other</p>
+                </div>
+                   
                 </div>
                 <div className='hamburger-menu' onClick={handleClick}>
                     <CgMenu />

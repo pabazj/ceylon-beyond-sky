@@ -51,7 +51,7 @@ const Menu = ({ items, handleClick, showMenu , setShowMenu}) => {
   return (
     <li onMouseEnter={() => handleMouseEnter(items)} onMouseLeave={handleMouseLeave} onClick={() => handleOnClick(items)} >
       <Link to={items.submenu ? '/' : items.url} className='text-link'  onClick={items.submenu ? null : handleLinkClick}>
-        <span> {items.title} </span>
+        <span> {items.title === 'Contact Us' ? <button className="button" >Make My Trip</button> : <b>{items.title} </b>}</span>
         {items.submenu && <BsChevronDown />}
       </Link >
       {items.submenu && activeItem === items &&(

@@ -38,13 +38,14 @@ function Activities() {
         {activityList.map(item => (
           <div className="serviceBox"  key={item.id}>
             <div className="service-icon">
-              <span> {getActivityIcons(item.icon) }</span>
+              {/* <span> {getActivityIcons(item.icon) }</span> */}
+              <img src={item.image} />
             </div>
             <h3 className="title">{item.title}</h3>
             <p className="description">
              {item.description}
             </p>
-            <Link to={item.url} ><button className='activity_button'>Explore More</button></Link>
+            <div className="activity-explore-btn"><Link to={item.url} ><button className='button'>Explore</button></Link></div>
           </div>
        ))}
 

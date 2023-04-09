@@ -22,12 +22,20 @@
     padding: 3rem 5rem;
 }
 .about-wrapper{
-    padding: 5rem;
+    padding: 3rem;
+}
+.about-wrapper p{
+    font-size: 14px;
+}
+
+.about-wrapper li{
+    font-size: 14px;
 }
 
 .about-wrapper h2 {
     text-align: center;
-    padding: 1rem;
+    font-size: 1.7rem;
+    /* padding: 1rem; */
 }
 
 @media screen and (max-width: 850px) {

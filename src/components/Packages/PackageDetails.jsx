@@ -9,6 +9,7 @@ import BuddhistCultureAndClassic from './BuddhistCultureAndClassic'
 import WeddingAndHoneymoonTour from './WeddingAndHoneymoonTour'
 import RamayanaTour from './RamayanaTour'
 import WhildLifeSafari from './WhildLifeSafari'
+import DifferentlyAbledTour from './DifferentlyAbledTour'
 
 const getPackageDetailsComponent = (packageId) => {
     
@@ -29,6 +30,8 @@ const getPackageDetailsComponent = (packageId) => {
           return <RamayanaTour/>;
         case 'whild-life-safari':
           return <WhildLifeSafari/>;
+        case 'differently-abled-tour' : 
+        return <DifferentlyAbledTour/>
         default:
           return null;
       }

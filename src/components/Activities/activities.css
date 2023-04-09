@@ -50,16 +50,16 @@
   }
 
   .activity-detail-container h3, h4{
-    font-size: smaller;
+    font-size: 14px;
     padding-top: 1rem;
      } 
   .activity-detail-container p{
-   font-size: smaller;
-   padding-top: 1rem;
+   font-size: 14px;
+   /* padding-top: 1rem; */
     }
 
   .activity-detail-container li{
-    font-size: smaller;
+    font-size: 14px;
   }
 
   .activity-detail-container .cycling {
@@ -106,16 +106,30 @@
       position: relative;
   }
   .serviceBox .service-icon{
-      width: 80px;
-      height: 80px;
+      /* width: 80px;
+      height: 80px; */
       border-radius: 50%;
       padding: 10px;
       margin: 0 auto 15px;
       /*border: 2px solid rgba(0,0,0,0.7);*/
-      box-shadow: 0 0 2px 2px rgba(0,0,0,0.3);
+      /* box-shadow: 0 0 2px 2px rgba(0,0,0,0.3); */
       z-index: 1;
       position: relative;
       transition: all 0.5s ease 0s;
+      border-radius: 50%;
+      width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+  }
+
+  .serviceBox .service-icon img{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   
   .serviceBox .service-icon span{
@@ -137,7 +151,7 @@
   }
   
   .serviceBox .title{
-      font-size: 20px;
+      font-size: medium;
       color: #000000;
       text-transform: uppercase;
       margin: 0 0 10px 0;
@@ -149,6 +163,10 @@
       margin: 0;
   }
   
+  .activity-explore-btn {
+    padding-top: 10px;
+  }
+
   .activity_button {
     border: none;
     outline: 0;
@@ -161,7 +179,7 @@
     /* width: 90%; */
     /* position:absolute; */
     bottom:1rem;
-    color: green;
+    color: #1bbc9d;
   }
 
   .activity_button:hover {
@@ -175,9 +193,9 @@
   }
 
   .activity_post_container h2{
-    font-size:1.5rem;
+    font-size:1.7rem;
     color:#2c3050;
-    padding-bottom: 1rem; 
+    /* padding-bottom: 1rem;  */
   }
 
     
@@ -200,6 +218,14 @@
       }
       .activity-detail-container article {
         padding-top: 3rem;
+      }
+
+      .serviceBox .service-icon{
+        width: 120px;
+        height: 120px;
+      }
+      .serviceBox .title{
+        font-size: 16px;
       }
     }
 

@@ -67,6 +67,10 @@ export const menuItems = [
                 title: 'WhildLife Safari',
                 url: '/packages/whild-life-safari',
             },
+            {
+                title: 'Differently Abled Tour',
+                url: '/packages/differently-abled-tour',
+            },
         ],
     },
     {
