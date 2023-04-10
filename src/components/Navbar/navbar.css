@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
   .navbar {
     width: 100%;
     height: 80px;
@@ -170,12 +173,14 @@ display: none;
 .navbar .logo-text h2{
   font-size: 2rem;
   margin: 0;
-  font-family: 'Inkfree', sans-serif;
+  /* font-family: 'Indie Flower', cursive; */
+  /* font-family: 'Carter One', cursive; */
+  font-family: 'Shantell Sans', cursive;
 }
 
 .navbar .logo-text p {
-  font-size: 14px; 
-  font-family: 'AC', sans-serif;
+  font-size: 16px; 
+  font-family: 'Delicious Handrawn', cursive;
 }
 
 @media (max-width: 768px) {
@@ -186,7 +191,7 @@ display: none;
   .navbar .hamburger-menu{
     display: flex;
     margin-left: auto;
-    padding: 30px;
+    padding: 10px;
   }
 
   .navbar .nav-menu {
@@ -222,63 +227,33 @@ display: none;
   overflow-y: scroll;
 }
 
-  /* .navbar nav {
-    display: flex;
-    flex-direction: column;
-  } */
-  /* .navbar .navbar {
-    background: rgb(13, 26, 38);
-    color: white;
-    padding: 0;
-    margin: 0;
-  }
-
-  .navbar .nav-menu {
-    width: 100%;
-    justify-content: space-between;
-    z-index: 999;
 }
-.navbar nav {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .navbar nav ul {
-    flex-direction: column;
-    background: rgb(13, 26, 38);
-  }
-  
-  .navbar nav li {
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    color: white;
-  }
-  
-  .navbar nav a {
-    padding: 1rem;
-  }
-  
-  .navbar nav ul ul {
-    position: static;
-    display: none;
-    margin-left: 1rem;
-  }
-  
-  .navbar nav ul li:hover > ul {
-    display: block;
-  }
 
-  .navbar .text-link {
-    color: black;
-  }
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
 
-  .navbar .logo {
-    display: none;
+@keyframes textclip {
+  to {
+    background-position: 200% center;
   }
-  .navbar .hamburger-menu {
-   display: flex;
-   justify-content: flex-end;
-    } */
-    
 }

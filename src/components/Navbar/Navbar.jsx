@@ -23,13 +23,14 @@ function Navbar() {
                 <div className='logo'>
                 <img src={Logo} />
                 <div className="logo-text">
-                <h2>Ceylon Beyond Sky</h2>
+                <h2 className='animate-charcter'>Ceylon Beyond Sky</h2>
+                
                 <p >Land like no other</p>
                 </div>
                    
                 </div>
                 <div className='hamburger-menu' onClick={handleClick}>
-                    <CgMenu />
+                    <CgMenu size={24} />
                 </div>
 
                 <ul className={showMenu ? 'nav-menu active' : 'nav-menu'}>

@@ -2,7 +2,7 @@ import uniqid from 'uniqid';
 
 import Adventure from'./assets/Packages/adventure/rafting.jpg';
 import Ayuruweda from'./assets/Packages/ayuruweda/spa.jpg';
-import Beach from'./assets/Packages/beach/SurfingEvening.jpg';
+import Beach from'./assets/Packages/beach/beach.jpg';
 import BuddhistCulture from'./assets/Packages/buddhisit_culture/polonnaruwa.jpg';
 import Family from'./assets/Packages/family_tour/Village.jpg';
 import Ramayana from'./assets/Packages/ramayana/Slaya.jpg';
