@@ -3,7 +3,19 @@
     grid-template-columns: repeat(3, 1fr);
     gap:1.5rem;
     padding: 2rem 5rem;
+    position: relative; 
 }
+
+.package_container:after {
+  content: ""; 
+  display: block; 
+  position: absolute;
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  height: 60px; 
+}
+
 .package_container article {
     --img-scale: 1.001;
     --title-color: black;
@@ -91,11 +103,18 @@
   }
 
   .article-wrapper .btn-wrapper {
+    position: absolute; 
+    left: 0; 
+    right: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center; 
+    bottom: 1rem; 
   }
 
+  .article-details {
+    margin-bottom: 3rem;
+  }
   .button:hover {
     background-color: #555;
   }
@@ -108,13 +127,7 @@
   .post_container h2{
     font-size:1.7rem;
     color:#2c3050;
-    /* padding-bottom: 1rem;  */
   }
-
-  /* .post h3{
-    font-size:1rem;
-    color:#2c3050;
-  } */
   
   .quote{
     border-left:3px solid #1bbc9d;
