@@ -63,11 +63,7 @@ function Contact() {
                                     <h2 className="lg-view">Enquire Us</h2>
                                     <h2 className="sm-view">Let's Chat</h2>
                                     <p>* Required</p>
-                                    {/* <div className="social-container">
-                                        <a href="#" className="social"><i className="fab fa-facebook-f"></i></a>
-                                        <a href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
-                                        <a href="#" className="social"><i className="fab fa-linkedin-in"></i></a>
-                                    </div> */}
+                                    
                                     <input type="text" placeholder="Name *" name="name" value={formData.name} onChange={handleInputChange}/>
                                     <input type="email" placeholder="Email *" name="email" value={formData.email} onChange={handleInputChange}/>
                                     <input type="text" placeholder="Country" name="country" value={formData.country} onChange={handleInputChange} />

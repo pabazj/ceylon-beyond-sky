@@ -193,6 +193,28 @@
       cursor: pointer;
       bottom:1rem;
     }
+
+    .package-detail-container{
+      padding: 1rem;
+    }
+    .post_container {
+      padding: 1rem;
+    }
+    .package-detail-container article {
+      padding-top: 3rem;
+    }
+    .article-body p{
+      /* padding: 1rem; */
+      padding: 1rem;
+    }
+
+    .article-body {
+      padding: 0;
+    }
+
+    .package_container .button {
+      position:relative
+    }
    
     }
 
