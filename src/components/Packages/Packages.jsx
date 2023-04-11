@@ -10,7 +10,7 @@ function Packages() {
   }, []);
 
   return (
-    <section name='packages'>
+    <section name='packages' className='package_main'>
       <h2>Packages</h2>
       <div className='package_container'>
         {packageList?.map(item => (

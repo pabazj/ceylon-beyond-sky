@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { menuItems } from './menuItems'
 import Menu from './Menu'
-import { CgMenu } from 'react-icons/cg';
+import { CgMenu, CgClose } from 'react-icons/cg';
 
 import Logo from '../../assets/logo.png'
 
@@ -30,7 +30,7 @@ function Navbar() {
                    
                 </div>
                 <div className='hamburger-menu' onClick={handleClick}>
-                    <CgMenu size={24} />
+                   {showMenu ? <CgClose size={24} /> :  <CgMenu size={24} />}
                 </div>
 
                 <ul className={showMenu ? 'nav-menu active' : 'nav-menu'}>
